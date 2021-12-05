@@ -1,15 +1,16 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+
+// import global styles before pages
+import "./style/global.scss";
+
+// import page level components
 import Home from "./pages/home";
-import Product from "./pages/product";
-import Simple from "./pages/simple";
 
 const App: React.FC = () => (
   <BrowserRouter>
     <Routes>
       <Route path="/" element={<Home />} />
-      <Route path="simple" element={<Simple />} />
-      <Route path="product/:id" element={<Product />} />
       <Route
         path="*"
         element={

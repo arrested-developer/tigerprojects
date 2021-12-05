@@ -1,19 +1,47 @@
 import React from "react";
-import { Link } from "react-router-dom";
+
+import tigerBooks from "../images/tiger-books.jpeg";
+
+import styles from "./home.module.scss";
 
 const Home: React.FC = () => (
-  <div>
-    <h1>Bookkeeper</h1>
-    <nav
-      style={{
-        borderBottom: "solid 1px",
-        paddingBottom: "1rem",
-      }}
-    >
-      <Link to="/">Home</Link> | <Link to="/simple">Simple Page</Link> |{" "}
-      <Link to="/product/1">Product 1</Link> |{" "}
-      <Link to="/product/2">Product 2</Link>
-    </nav>
+  <div className={styles.pageContainer}>
+    <header className={styles.menuHeader}>
+      <h1 className="f1">tiger projects</h1>
+      <p>Tiger Hagino Reid</p>
+      <p>萩野タイガー</p>
+      <nav className="f6">
+        <a
+          className={styles.menuLink}
+          href="https://www.instagram.com/tigerhaginoreid"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          instagram
+        </a>
+        <a
+          className={styles.menuLink}
+          href="https://twitter.com/tigerhaginoreid"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          twitter
+        </a>
+        <a
+          className={styles.menuLink}
+          href="mailto:hello@tigerprojects.co"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          email
+        </a>
+      </nav>
+    </header>
+    <main className={styles.mainContent}>
+      <div className={styles.imageWrapper}>
+        <img src={tigerBooks} alt="Tiger Reid" />
+      </div>
+    </main>
   </div>
 );
 
