@@ -13,6 +13,23 @@ const Home: React.FC = () => (
         <h1 className="f1">tiger projects</h1>
         <p className={styles.name}>Tiger Hagino Reid</p>
         <p className={styles.name}>萩野タイガー</p>
+      </header>
+      <main>
+        <ul className={styles.list}>
+          <li>music release campaign strategy</li>
+          <li>record label project management </li>
+          <li>artist management</li>
+          <li>international</li>
+        </ul>
+        <h2 className={styles.listTitle}>Roster:</h2>
+        <ul className={styles.list}>
+          <li>Kyary Pamyu Pamyu: global project manager for Asobi System</li>
+          <li>Lucinda Chua: manager w/ ATC</li>
+          <li>Rina Sawayama: international for Dirty Hit</li>
+          <li>Yaeji: global project manager for XL Recordings</li>
+        </ul>
+      </main>
+      <footer className={styles.footerLinks}>
         <nav className="f6">
           <a
             className={styles.menuLink}
@@ -47,22 +64,7 @@ const Home: React.FC = () => (
             email
           </a>
         </nav>
-      </header>
-      <main>
-        <ul className={styles.list}>
-          <li>music release campaign strategy</li>
-          <li>record label project management </li>
-          <li>artist management</li>
-          <li>international</li>
-        </ul>
-        <h2 className={styles.listTitle}>Roster:</h2>
-        <ul className={styles.list}>
-          <li>Kyary Pamyu Pamyu: global project manager for Asobi System</li>
-          <li>Lucinda Chua: manager w/ ATC</li>
-          <li>Rina Sawayama: international for Dirty Hit</li>
-          <li>Yaeji: global project manager for XL Recordings</li>
-        </ul>
-      </main>
+      </footer>
       {/* <main className={styles.mainContent}>
       <div className={styles.imageWrapper}>
         <img src={tigerBooks} alt="Tiger Reid" />
