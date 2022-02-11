@@ -97,6 +97,9 @@
   .pageContainer {
     padding: 1rem;
   }
+}
+
+@media all and (min-width: $breakpoint-large) {
   .menuHeader {
     padding-top: 0.5rem;
   }
